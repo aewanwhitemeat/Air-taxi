@@ -1,58 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SkyTaxi - Your Air Taxi Solution</title>
-  <link href="styles.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Air Taxi Service offering fast, safe, and eco-friendly transportation in urban and periurban areas.">
+  <meta name="keywords" content="air taxi, flying vehicle, urban transport, eco-friendly transport, booking, taxi service">
+  <title>Air Taxi - Book Your Flight</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Header Section -->
   <header>
-    <div class="overlay">
-      <h1>SkyTaxi</h1>
-      <p>Revolutionizing Urban and Periurban Air Travel</p>
-      <a href="#booking" class="btn">Book a Ride</a>
-    </div>
+    <h1>Air Taxi</h1>
+    <p>Fast, Safe, and Eco-Friendly Urban Transportation</p>
+    <a href="https://api.whatsapp.com/send?phone=254700768025&text=Hi%20Air%20Taxi%2C%20I%20would%20like%20to%20place%20an%20order." class="button" aria-label="Order Now on WhatsApp">Order Now on WhatsApp</a>
   </header>
 
-  <section class="about">
-    <h2>About Us</h2>
-    <p>SkyTaxi offers fast, eco-friendly air taxi services for city and periurban transportation. Say goodbye to traffic!</p>
+  <!-- Navigation Section -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Welcome to Air Taxi!</h2>
+    <p>Your reliable and eco-friendly air transport solution for urban and periurban areas.</p>
   </section>
 
-  <section class="services">
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We provide fast, safe, and efficient air taxi services, connecting cities and remote areas with modern flying vehicles. Our fleet is designed to reduce traffic congestion and minimize carbon emissions.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
     <h2>Our Services</h2>
     <ul>
-      <li>On-Demand Air Taxi Rides</li>
-      <li>Scheduled Intercity Flights</li>
-      <li>Corporate and VIP Transport</li>
+      <li>On-demand air taxi booking</li>
+      <li>Scheduled rides for business and events</li>
+      <li>Customizable routes and flexible timings</li>
     </ul>
   </section>
 
-  <section class="testimonials">
-    <h2>What Our Customers Say</h2>
-    <blockquote>
-      "SkyTaxi saved me hours of traffic every week. Highly recommend!" - Jane M.
-    </blockquote>
-    <blockquote>
-      "Professional, punctual, and so futuristic!" - Alex K.
-    </blockquote>
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery">
+    <h2>Our Fleet in Action</h2>
+    <p>Explore some of the futuristic air taxis we offer for urban and periurban transport.</p>
+    <div class="gallery-grid">
+      <img src="images/flying1.jpg" alt="Air Taxi 1">
+      <img src="images/flying2.jpg" alt="Air Taxi 2">
+      <img src="images/flying3.jpg" alt="Air Taxi 3">
+      <img src="images/flying4.jpg" alt="Air Taxi 4">
+    </div>
   </section>
 
-  <section class="booking" id="booking">
-    <h2>Book Your Ride</h2>
-    <form>
-      <input type="text" placeholder="Full Name" required />
-      <input type="email" placeholder="Email Address" required />
-      <input type="text" placeholder="Pickup Location" required />
-      <input type="text" placeholder="Destination" required />
-      <input type="datetime-local" required />
-      <button type="submit" class="btn">Submit</button>
-    </form>
+  <!-- FAQ Section -->
+  <section id="faq" class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>How do I book an air taxi?</h3>
+      <p>You can easily book through our website by filling out the booking form or by contacting us via WhatsApp.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What areas do you serve?</h3>
+      <p>We currently serve urban and periurban areas, with plans to expand soon.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Are air taxis safe?</h3>
+      <p>Absolutely. Our fleet is maintained to the highest aviation safety standards and operated by certified professionals.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I schedule a ride in advance?</h3>
+      <p>Yes, advanced bookings are recommended and can be scheduled up to 30 days ahead.</p>
+    </div>
   </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to book directly? Reach out to us below.</p>
+
+    <div class="contact-container">
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
   <footer>
-    <p>&copy; 2025 SkyTaxi. All rights reserved.</p>
+    <p>&copy; 2025 Air Taxi. All rights reserved.</p>
   </footer>
 </body>
 </html>
